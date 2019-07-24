@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Unreachable",
+  "version": "0.0.1",
+  "description": "按钮如潮水般退去",
+
+  "icons":{
+    "16":"icon.png",
+    "32":"icon.png",
+    "48":"icon.png",
+    "128":"icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/cannot_touch.js"]
+    }
+  ]
+}
